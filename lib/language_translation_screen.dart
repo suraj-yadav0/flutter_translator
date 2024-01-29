@@ -11,6 +11,10 @@ class LanguageTranslationPage extends StatefulWidget {
 
 class _LanguageTranslationPageState extends State<LanguageTranslationPage> {
   TextEditingController languageController = TextEditingController();
+     var language = ["Hindi", "English", "Marathi"];
+    var originLanguage = "From";
+    var destinationLanguage = "To";
+
   var output = "";
 
   void translate(String src, String dest, String input) async {
@@ -41,10 +45,7 @@ class _LanguageTranslationPageState extends State<LanguageTranslationPage> {
 
   @override
   Widget build(BuildContext context) {
-    var language = ["Hindi", "English", "Marathi"];
-    var originLanguage = "From";
-    var destinationLanguage = "To";
-
+ 
     return Scaffold(
         backgroundColor: const Color(0xff10223d),
       appBar: AppBar(
